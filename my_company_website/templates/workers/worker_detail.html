@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block content %}
+<h1>My Company</h1>
+<div class="worker-detail">
+    <div class="worker">
+        <h2>{{worker.FIRST_NAME}} {{worker.LAST_NAME}}</h2>
+        <p>Email: {{worker.EMAIL}}</p>
+        <p>Phone Number: {{worker.PHONE_NUMBER}}</p>
+        <p>Hire Date: {{worker.HIRE_DATE}}</p>
+        <p>Job ID: {{worker.JOB_ID}}</p>
+        <p>Salary: {{worker.SALARY}}</p>
+        <p>Comission PCT: {{worker.COMMISSION_PCT}}</p>
+        <p>Manager ID: {{worker.MANAGER_ID}}</p>
+        <p>Department ID: {{worker.DEPARTMENT_ID}}</p>
+    </div>
+</div>
+{% endblock %}
